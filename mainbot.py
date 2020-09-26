@@ -12,7 +12,7 @@ import urllib
 import os
 from telegram.ext import Updater,CommandHandler
 
-api_key = ''
+api_key = 'V32GJ7XZI8ZHT67W'
 lturl = "https://api.thingspeak.com/update?"+api_key+"&field1="
 fnurl = "https://api.thingspeak.com/update?"+api_key+"&field2="
 
@@ -40,8 +40,7 @@ def fnoff(bot,update):
   data = urllib.request.urlopen(dt)
   bot.send_message(chat_id = chat_id ,text = "Fan Off")
 
-updater_api = '' 
-updater = Updater(updater_api)
+updater = Updater('1389975784:AAHB_9gOwQc5D5wSJ8Sw9XHcYqMk53K9p1c')
 
 dp = updater.dispatcher
 dp.add_handler(CommandHandler('lton',lton))
