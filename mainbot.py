@@ -7,10 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive
 """
 
-!pip install thingspeak
-!pip install python-telegram-bot
-!pip install urllib3
-
 import thingspeak 
 import urllib
 import os
