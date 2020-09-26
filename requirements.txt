@@ -1,1 +1,3 @@
-tweepy
+urllib3
+python-telegram-bot
+thingspeak
