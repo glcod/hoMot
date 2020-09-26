@@ -13,9 +13,10 @@ Original file is located at
 
 import thingspeak 
 import urllib
+import os
 from telegram.ext import Updater,CommandHandler
 
-api_key = os.getenv('consumer_secret') # V32GJ7XZI8ZHT67W
+api_key = os.getenv('consumer_secret') 
 lturl = "https://api.thingspeak.com/update?"+api_key+"&field1="
 fnurl = "https://api.thingspeak.com/update?"+api_key+"&field2="
 
@@ -43,7 +44,7 @@ def fnoff(bot,update):
   data = urllib.request.urlopen(dt)
   bot.send_message(chat_id = chat_id ,text = "Fan Off")
 
-updater_api = os.getenv('access_token') #1389975784:AAHB_9gOwQc5D5wSJ8Sw9XHcYqMk53K9p1c
+updater_api = os.getenv('access_token') 
 updater = Updater(updater_api)
 
 dp = updater.dispatcher
@@ -56,4 +57,6 @@ updater.idle()
 
 
      
+    
+         
 
