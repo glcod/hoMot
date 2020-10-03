@@ -9,8 +9,8 @@ import os
 from telegram.ext import Updater,CommandHandler
 
 api_key = os.getenv('thinkspeak_api')
-lturl = "https://api.thingspeak.com/update?"+api_key+"&field1="
-fnurl = "https://api.thingspeak.com/update?"+api_key+"&field2="
+lturl = str("https://api.thingspeak.com/update?"+api_key+"&field1=")
+fnurl = str("https://api.thingspeak.com/update?"+api_key+"&field2=")
 
 def lton(bot,update):
   chat_id = update.message.chat_id
